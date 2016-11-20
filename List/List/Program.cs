@@ -36,7 +36,7 @@ namespace List
             //{
             //    Console.WriteLine("{0} =  {1}", i, numbers[i]);
             //}
-            
+
             //Console.ReadKey();
 
 
@@ -45,22 +45,33 @@ namespace List
 
             #region ornek2
 
-            int[] array = new int[2];
-            array[0] = 3;
-            array[1] = 5;
+            //int[] array = new int[2];
+            //array[0] = 3;
+            //array[1] = 5;
 
-            List<int> list = new List<int>(array);
+            //List<int> list = new List<int>(array);
 
-            Console.WriteLine("Boyut: "+ list.Count);
-            
-            Console.WriteLine("Elemanlar : ");
-            foreach (var item in list)
-            {
-                Console.Write(item + " ");
-            }
+            //Console.WriteLine("Boyut: "+ list.Count);
+
+            //Console.WriteLine("Elemanlar : ");
+            //foreach (var item in list)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //Console.ReadKey();
+
+            #endregion ornek3
+
+            List<int> numbers = new List<int>(new int[] {1903,1904,1905,1907});
+
+            int index = numbers.IndexOf(1905);
+            Console.WriteLine("sırası : " + index);
+
+            index = numbers.IndexOf(1907);
+            Console.WriteLine("sırası : " + index);
+
             Console.ReadKey();
 
-            #endregion
         }
     }
 }
