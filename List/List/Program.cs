@@ -10,30 +10,57 @@ namespace List
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int>();
+            #region ornek1
 
-            numbers.Add(1);
+            //List<int> numbers = new List<int>();
 
-            numbers.AddRange(new int[] { 2, 3 });
+            //numbers.Add(1);
 
-            Console.WriteLine(numbers.Count);
+            //numbers.AddRange(new int[] { 2, 3 });
 
-            //numbers.Clear();
             //Console.WriteLine(numbers.Count);
 
-            foreach (var item in numbers)
-            {
-                Console.WriteLine(item);
-            }
+            //Console.WriteLine();
 
-            Console.WriteLine();
+            ////numbers.Clear();
+            ////Console.WriteLine(numbers.Count);
 
-            for (int i = 0; i < numbers.Count; i++)
-            {
-                Console.WriteLine("{0} =  {1}", i, numbers[i]);
-            }
+            //foreach (var item in numbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.WriteLine();
+
+            //for (int i = 0; i < numbers.Count; i++)
+            //{
+            //    Console.WriteLine("{0} =  {1}", i, numbers[i]);
+            //}
             
+            //Console.ReadKey();
+
+
+            #endregion
+
+
+            #region ornek2
+
+            int[] array = new int[2];
+            array[0] = 3;
+            array[1] = 5;
+
+            List<int> list = new List<int>(array);
+
+            Console.WriteLine("Boyut: "+ list.Count);
+            
+            Console.WriteLine("Elemanlar : ");
+            foreach (var item in list)
+            {
+                Console.Write(item + " ");
+            }
             Console.ReadKey();
+
+            #endregion
         }
     }
 }
