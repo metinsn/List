@@ -62,15 +62,39 @@ namespace List
 
             #endregion ornek3
 
-            List<int> numbers = new List<int>(new int[] {1903,1904,1905,1907});
+            #region ornek3
 
-            int index = numbers.IndexOf(1905);
-            Console.WriteLine("sırası : " + index);
+            //List<int> numbers = new List<int>(new int[] {1903,1904,1905,1907});
 
-            index = numbers.IndexOf(1907);
-            Console.WriteLine("sırası : " + index);
+            //int index = numbers.IndexOf(1905);
+            //Console.WriteLine("sırası : " + index);
 
+            //index = numbers.IndexOf(1907);
+            //Console.WriteLine("sırası : " + index);
+
+            //Console.ReadKey();
+
+
+            #endregion
+
+
+            #region ornek4 
+            List<int> Liste = new List<int>();
+            Liste.Add(3);
+            Liste.Add(5);
+            Liste.AddRange(new int[] { 4, 20, 25, 3, 17 });
+            //Liste.RemoveAt(0);//girilen index silinir
+            //Liste.Remove(8);//girilen deger listeden silinir, 1'den fazla ise ilk değer silinir.
+            //Liste.RemoveRange(3,2);//aralık siler
+            //bool varmi = Liste.Contains(15); //girilen degeri listede arar varsa true yoksa false döner 
+            
+            foreach (var item in Liste)
+            {
+                Console.WriteLine("\n\t" + item);
+            }
             Console.ReadKey();
+
+            #endregion
 
         }
     }
