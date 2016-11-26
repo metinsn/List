@@ -77,29 +77,67 @@ namespace List
 
             #endregion
 
-
             #region ornek4 
-            List<int> Liste = new List<int>();
-            Liste.Add(3);
-            Liste.Add(5);
-            Liste.AddRange(new int[] { 4, 20, 25, 7, 17 });
-            //Liste.RemoveAt(0);//girilen index silinir
-            //Liste.Remove(8);//girilen deger listeden silinir, 1'den fazla ise ilk değer silinir.
-            //Liste.RemoveRange(3,2);//aralık siler
-            //bool varmi = Liste.Contains(15); //girilen degeri listede arar varsa true yoksa false döner 
-            //var result = Liste.Find(i => i > 5);// 5'ten büyük ilk sayısı bulur
-            //var result = Liste.FindAll(i => i> 5).ToList();// 5'ten büyük tüm itemleri bulur
-            //var result = Liste.FindAll(i => i> 5).Count();// 5'ten büyük tüm itemleri bulur
+            //List<int> Liste = new List<int>();
+            //Liste.Add(3);
+            //Liste.Add(5);
+            //Liste.AddRange(new int[] { 4, 20, 25, 7, 17 });
+            ////Liste.RemoveAt(0);//girilen index silinir
+            ////Liste.Remove(8);//girilen deger listeden silinir, 1'den fazla ise ilk değer silinir.
+            ////Liste.RemoveRange(3,2);//aralık siler
+            ////bool varmi = Liste.Contains(15); //girilen degeri listede arar varsa true yoksa false döner 
+            ////var result = Liste.Find(i => i > 5);// 5'ten büyük ilk sayısı bulur
+            ////var result = Liste.FindAll(i => i> 5).ToList();// 5'ten büyük tüm itemleri bulur
+            ////var result = Liste.FindAll(i => i> 5).Count();// 5'ten büyük tüm itemleri bulur
 
-            Liste.Sort();
-            Liste.Reverse();    
+            //Liste.Sort();
+            //Liste.Reverse();    
 
-            foreach (var item in Liste)
-            {
-                Console.WriteLine("\n\t" + item);
-            }
+            //foreach (var item in Liste)
+            //{
+            //    Console.WriteLine("\n\t" + item);
+            //}
 
-            Console.ReadKey();
+            //Console.ReadKey();
+
+            #endregion
+
+            #region alfabe 
+            //List<char> alfabe = new List<char>();
+
+            //for (char i = 'a'; i <= 'z'; i++)
+            //{
+            //    alfabe.Add(i);
+            //}
+
+            //alfabe.Sort();
+            //alfabe.Reverse();
+
+            //foreach (var item in alfabe)
+            //{
+            //    Console.Write(item + " ");
+            //}
+
+            //Console.ReadKey();
+
+            #endregion
+
+            #region stringsıralama
+
+            //List<string> isimler = new List<string>();
+
+            //isimler.AddRange(new string[] { "Özgür", "Ali", "Vali", "Veli"});
+
+            //isimler.Reverse();
+
+            ////isimler.Sort();
+
+            //foreach (var item in isimler)
+            //{
+            //    Console.Write(item + " ");
+            //}
+
+            //Console.ReadKey();
 
             #endregion
 
