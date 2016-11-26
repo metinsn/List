@@ -42,7 +42,6 @@ namespace List
 
             #endregion
 
-
             #region ornek2
 
             //int[] array = new int[2];
@@ -140,6 +139,7 @@ namespace List
             //Console.ReadKey();
 
             #endregion
+          
 
         }
     }
